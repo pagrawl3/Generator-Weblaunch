@@ -1,0 +1,53 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans: 300, 400, 600, 700);
+
+@-webkit-keyframes rotating {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes progress {
+	0% {width: 0%; opacity: 0.1;}
+	10% {opacity: 1;}
+	90% {opacity: 1;}
+	100% {width: 100%; opacity: 0;}
+}
+
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.transition {
+	-webkit-transition: 0.1s ease-out;
+	-moz-transition: 0.1s ease-out;
+	-ms-transition: 0.1s ease-out;
+	-o-transition: 0.1s ease-out;
+	transition: 0.1s ease-out;
+}
+
+.rotating {
+    -webkit-animation: rotating 2s linear infinite;
+}
+
+@media all and (max-width: 640px) {
+	body {
+		font-size: 12px !important;
+	}
+	
+}
+
+@media all and (max-width: 1200px) {
+	body {
+		font-size: 13px;
+	}
+}
+
+@media all and (max-width: 1000px) {
+	
+}
